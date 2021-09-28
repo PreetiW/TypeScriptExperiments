@@ -4,7 +4,7 @@ const input2 = document.getElementById("num2")! as HTMLInputElement;
 
 // we can check if the params are number in JS
 // But if we use TS, it has code under the hood to do it for us
-function add(num1: number, num2: number) {
+function add(num1: number, num2: number): number {
   return num1 + num2;
 }
 
