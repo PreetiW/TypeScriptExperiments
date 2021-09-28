@@ -2,7 +2,7 @@
 
 A project created to learn more about typescript
 
-### What is TypeScript?
+## What is TypeScript?
 
 - Javascript Superset - Adds new features, make writing JS easier
 - Browser cant execute it directly - But TS compiler compiles the TS code into JS code
@@ -10,9 +10,9 @@ A project created to learn more about typescript
 - Nicer syntax, adds types feature which helps identify errors earlier during compile time
 - It will force you write better, cleaner and less error prone code
 
-### Using Types
+## Using Types
 
-## Core Primitive Types (all lower case)
+### Core Primitive Types (all lower case)
 
 - number - all types of numeric values such as 1, 2.4, -3
 - boolean - true/false
