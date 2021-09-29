@@ -17,6 +17,7 @@ A project created to learn more about typescript
 - number - all types of numeric values such as 1, 2.4, -3
 - boolean - true/false
 - string - values can be written as 'demo', "demo" , `demo`
+- object - { key: type of value }
 
 ### Type Inference
 
@@ -31,4 +32,34 @@ const message = "Hello World" // will infere the type to string with a const val
 
 ```
 const result: number;  // here the result variable will be created which will accept only number values
+```
+
+- a Javascripte object below
+
+```
+const product = {
+id: 'abc1',
+price: 12.99,
+tags: ['great-offer', 'hot-and-new'],
+details: {
+title: 'Red Carpet',
+description: 'A great carpet - almost brand-new!'
+}
+}
+
+```
+
+will be inferred as
+
+```
+{
+id: string;
+price: number;
+tags: string[];
+details: {
+title: string;
+description: string;
+}
+}
+
 ```
