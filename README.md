@@ -38,13 +38,13 @@ const result: number;  // here the result variable will be created which will ac
 
 ```
 const product = {
-id: 'abc1',
-price: 12.99,
-tags: ['great-offer', 'hot-and-new'],
-details: {
-title: 'Red Carpet',
-description: 'A great carpet - almost brand-new!'
-}
+    id: 'abc1',
+    price: 12.99,
+    tags: ['great-offer', 'hot-and-new'],
+    details: {
+    title: 'Red Carpet',
+    description: 'A great carpet - almost brand-new!'
+    }
 }
 
 ```
@@ -53,13 +53,13 @@ will be inferred as
 
 ```
 {
-id: string;
-price: number;
-tags: string[];
-details: {
-title: string;
-description: string;
-}
+    id: string;
+    price: number;
+    tags: string[];
+    details: {
+    title: string;
+    description: string;
+    }
 }
 
 ```
