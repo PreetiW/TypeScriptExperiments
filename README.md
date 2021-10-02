@@ -12,12 +12,28 @@ A project created to learn more about typescript
 
 ## Using Types
 
-### Core Primitive Types (all lower case)
+### Core Primitive Types (As per Vanilla JavaScript, all lower case)
 
 - number - all types of numeric values such as 1, 2.4, -3
 - boolean - true/false
 - string - values can be written as 'demo', "demo" , `demo`
 - object - { key: type of value }
+- array - []
+
+### Non Vanilla JavaScript Types
+
+- Tuple - fixed length, fixed type array eg [number, string] will tell TypeScript to create an array which will have only 2 values, first one will be number and second one will be string. Note: TypeScript will not show any error in case we will try to use push method on this array.
+
+- Enums - constants which are human readable and use values which we define behind the scenes
+
+for eg:
+
+```
+enum Role { ADMIN = 'ADMIN', READ_ONLY = 100, OTHER = 200 }
+
+access enum like you access the object: Role.READ_ONLY // which will point to value 100
+
+```
 
 ### Type Inference
 
@@ -55,7 +71,7 @@ will be inferred as
 {
     id: string;
     price: number;
-    tags: string[];
+    tags: string[]; // this is important as TS will complain if we try to use any non-string methods for this array
     details: {
     title: string;
     description: string;
