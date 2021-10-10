@@ -72,6 +72,13 @@ function add(first: number, second: number): number {
 }
 
 
+// In case the function doesn't return anything the type of it is infered as `void`
+// In case we have a return statement but it doesn't return anything we should specify the type as `undefined` in this case
+
+function hello(){
+    console.log("Hello World");
+}
+
 
 ```
 
@@ -121,3 +128,8 @@ will be inferred as
 }
 
 ```
+
+
+# Status
+
+till function return types and void
