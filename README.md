@@ -35,6 +35,48 @@ access enum like you access the object: Role.READ_ONLY // which will point to va
 
 ```
 
+- any - It will allow you to store any type of value, but avoid trying to use it as much as possible as otherwise you losing the advantage of strict typing.
+
+- Union `|` - Used when we want to specify two or more types a variable or a parameter can accept
+
+- Type Aliases/ custom - We can use the `type` keyword to declare a type alias in which we can specify which all types we want to store for that particular type alias.
+
+for eg:
+
+```
+
+type name = number | string;
+
+//both are valid
+name = "Preeti";
+name = 123;
+
+// can also be applied to object type
+
+type User = { name: string; age: number };
+const u1: User = { name: 'Preeti', age: 29 }; // this works!
+
+
+```
+
+### Functions and Types
+
+* We can specify types for function parameters
+* We can also specify function return type but by default the typescript compiler will infer the return type
+
+for eg:
+
+```
+function add(first: number, second: number): number {
+    return first + second;
+}
+
+
+
+```
+
+
+
 ### Type Inference
 
 - used to provide type information and whenever we initialise any variable it is inferred automatically
