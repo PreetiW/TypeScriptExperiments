@@ -2,6 +2,10 @@
 
 A project created to learn more about typescript
 
+# Status
+
+till function return types and void
+
 ## What is TypeScript?
 
 - Javascript Superset - Adds new features, make writing JS easier
@@ -128,8 +132,3 @@ will be inferred as
 }
 
 ```
-
-
-# Status
-
-till function return types and void
