@@ -2,7 +2,7 @@
 
 A project created to learn more about typescript
 
-# Status
+## Status
 
 till function return types and void
 
